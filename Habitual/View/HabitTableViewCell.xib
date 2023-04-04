@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HabitCell" id="KGk-i7-Jjw" customClass="HabitTableViewCell" customModule="Habitual" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sB2-d3-0dm">
+                        <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hqe-AJ-kkQ">
+                                <rect key="frame" x="90.333333333333329" y="0.0" width="49.999999999999986" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="SWw-MI-mL8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URC-DK-iP5">
+                                <rect key="frame" x="150.33333333333334" y="0.0" width="77.999999999999972" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streak #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p8-66-aNt">
+                                <rect key="frame" x="238.33333333333334" y="0.0" width="55.333333333333343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6p8-66-aNt" secondAttribute="height" multiplier="63:50" id="nbD-OM-XpN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hqe-AJ-kkQ" firstAttribute="leading" secondItem="sB2-d3-0dm" secondAttribute="leading" constant="10" id="4AF-26-xKv"/>
+                            <constraint firstItem="URC-DK-iP5" firstAttribute="leading" secondItem="hqe-AJ-kkQ" secondAttribute="trailing" constant="10" id="U5d-Rv-tBY"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sB2-d3-0dm" secondAttribute="bottom" id="9pA-hQ-yFg"/>
+                    <constraint firstItem="sB2-d3-0dm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bzk-dR-NW5"/>
+                    <constraint firstAttribute="trailing" secondItem="sB2-d3-0dm" secondAttribute="trailing" id="hE2-ud-MEX"/>
+                    <constraint firstItem="sB2-d3-0dm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zzZ-iV-viN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewIcon" destination="hqe-AJ-kkQ" id="3pT-XR-MGL"/>
+                <outlet property="labelHabitTitle" destination="URC-DK-iP5" id="aUC-Ep-V8V"/>
+                <outlet property="labelStreaks" destination="6p8-66-aNt" id="QNS-U5-aoG"/>
+            </connections>
+            <point key="canvasLocation" x="27.480916030534349" y="-1.4084507042253522"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmHabitViewController" customModule="Habitual" customModuleProvider="target">
+            <connections>
+                <outlet property="habitImageView" destination="mjB-JG-WPL" id="1gc-h2-07F"/>
+                <outlet property="habitNameInputField" destination="WDi-bY-Sbx" id="lEh-l3-VYT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDi-bY-Sbx">
+                    <rect key="frame" x="16" y="718" width="353" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-JG-WPL">
+                    <rect key="frame" x="24" y="74" width="345" height="591"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3h-Os-CxR">
+                    <rect key="frame" x="16" y="767" width="361" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="xty-BI-lom"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Submit">
+                        <color key="baseBackgroundColor" red="0.64728528289999998" green="0.923080287" blue="0.78713571169999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="createHabitButtonPressed:" destination="-1" eventType="touchUpInside" id="v2y-DQ-34K"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAj-PL-8Fu">
+                    <rect key="frame" x="24" y="681" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IAj-PL-8Fu" firstAttribute="top" secondItem="mjB-JG-WPL" secondAttribute="bottom" constant="15" id="1IJ-0R-0lW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="k3h-Os-CxR" secondAttribute="bottom" constant="16" id="3OI-Nu-gfx"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="top" secondItem="IAj-PL-8Fu" secondAttribute="bottom" constant="15" id="6n3-zN-YgR"/>
+                <constraint firstItem="k3h-Os-CxR" firstAttribute="top" secondItem="WDi-bY-Sbx" secondAttribute="bottom" constant="15" id="7nY-3A-kYI"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="BcE-Tf-y7I"/>
+                <constraint firstItem="IAj-PL-8Fu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="BsT-P5-Lgu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WDi-bY-Sbx" secondAttribute="trailing" constant="16" id="EvQ-5w-LzX"/>
+                <constraint firstItem="k3h-Os-CxR" firstAttribute="top" secondItem="WDi-bY-Sbx" secondAttribute="bottom" constant="16" id="Evp-nE-o1A"/>
+                <constraint firstItem="k3h-Os-CxR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IGG-i4-haC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k3h-Os-CxR" secondAttribute="trailing" constant="16" id="IGg-0V-g5e"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="top" secondItem="IAj-PL-8Fu" secondAttribute="bottom" constant="16" id="JwV-zC-74T"/>
+                <constraint firstItem="mjB-JG-WPL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="NVl-H2-zgb"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="top" secondItem="IAj-PL-8Fu" secondAttribute="bottom" constant="16" id="NdS-Cd-znn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WDi-bY-Sbx" secondAttribute="trailing" constant="16" id="Nxa-hf-3n9"/>
+                <constraint firstItem="IAj-PL-8Fu" firstAttribute="top" secondItem="mjB-JG-WPL" secondAttribute="bottom" constant="16" id="TBr-UV-iQQ"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Wmn-0g-1uU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WDi-bY-Sbx" secondAttribute="trailing" constant="16" id="YmZ-Ee-pNW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mjB-JG-WPL" secondAttribute="trailing" constant="24" id="cvD-b7-QBx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IAj-PL-8Fu" secondAttribute="trailing" constant="24" id="hCO-EF-ETf"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ixX-Vf-Z4T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WDi-bY-Sbx" secondAttribute="trailing" constant="24" id="oke-XH-U1j"/>
+                <constraint firstItem="WDi-bY-Sbx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="qH8-jk-1SU"/>
+                <constraint firstItem="mjB-JG-WPL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="uVE-Fx-LZ6"/>
+            </constraints>
+            <point key="canvasLocation" x="57.251908396946561" y="0.0"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
