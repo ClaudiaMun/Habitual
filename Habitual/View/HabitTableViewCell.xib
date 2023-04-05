@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,9 +27,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URC-DK-iP5">
-                                <rect key="frame" x="150.33333333333334" y="0.0" width="77.999999999999972" height="44"/>
+                                <rect key="frame" x="150.33333333333334" y="0.0" width="78" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streak #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p8-66-aNt">
@@ -37,10 +38,11 @@
                                     <constraint firstAttribute="width" secondItem="6p8-66-aNt" secondAttribute="height" multiplier="63:50" id="nbD-OM-XpN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" red="0.78593177400000003" green="0.67361249430000003" blue="0.60392899860000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="hqe-AJ-kkQ" firstAttribute="leading" secondItem="sB2-d3-0dm" secondAttribute="leading" constant="10" id="4AF-26-xKv"/>
                             <constraint firstItem="URC-DK-iP5" firstAttribute="leading" secondItem="hqe-AJ-kkQ" secondAttribute="trailing" constant="10" id="U5d-Rv-tBY"/>
@@ -55,6 +57,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.78593177400000003" green="0.67361249430000003" blue="0.60392899860000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <connections>
                 <outlet property="imageViewIcon" destination="hqe-AJ-kkQ" id="3pT-XR-MGL"/>
                 <outlet property="labelHabitTitle" destination="URC-DK-iP5" id="aUC-Ep-V8V"/>
@@ -63,4 +66,9 @@
             <point key="canvasLocation" x="27.480916030534349" y="-1.4084507042253522"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
